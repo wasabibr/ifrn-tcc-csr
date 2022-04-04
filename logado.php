@@ -14,6 +14,8 @@ include('./includes/protect.php');
         <a href="logout.php">Sair</a>
     </p>
 
+    <img src= "./includes/include-img.php" />.
+
 <?php
 
 //inclusao do footer
