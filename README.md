@@ -178,5 +178,5 @@ O projeto está sendo idealizado de forma que possamos acrescentar novos módulo
 - [x] Criação de Repositório no GitHub
 - [ ] Criação da Base de Dados: dbcsr
     - [x] Criação da Tabela usuario
-    - [ ] Criacao da Tabela colecao
-    - [ ] criacao da Tabela item
+    - [ ] Criação da Tabela colecao
+    - [ ] Criação da Tabela item
