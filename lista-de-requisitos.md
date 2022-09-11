@@ -10,24 +10,34 @@ A elaboração desse documento de Requistos se apoia, parcialmente, sobre um que
 
 Esse projeto visa promover um espaço de fomento ao colecionismo de miniaturas de veículos e afins. Nesse sentido, como ponto de partida, elegemos as miniaturas da marca Hot Wheel®, pertencente à empresa Mattel®, devido a sua larga distribuição e valor de compra convidativo, tornando um objeto selecionável de mais fácil acesso.
 
-1.2.	ESCOPO DO PRODUTO
+​	1.2.	ESCOPO DO PRODUTO
 
 Para tanto buscamos elaborar uma proposta de um sistema, tal qual uma rede social, que possibilitaria a interação entre usuários que possuíssem esse mesmo interesse em comum, ou curiosos pela temática em geral. Num primeiro momento o projeto contaria com uma plataforma que permitiria ao usuário, não apenas, criar e compartilhar um perfil pessoal contendo suas informações, como também organizar, catalogar e expor a sua coleção de miniaturas.
 O projeto está sendo idealizado de forma que possamos acrescentar novos módulos, tais como um mini-blog e/ou um sistema de classificados, em resposta às necessidades do nosso público alvo.
 
-1.3.	ABREVIAÇÃO
+​	1.3.	ABREVIAÇÃO
 
 - CGI: Common Gateway Interface;
+
 - IDE: Integrated Development Environment ou Ambiente de Desenvolvimento Integrado;
+
 - MVC: Model, View, Controller;
+
 - MVP: Produto Viável Mínimo;
+
 - RF: requisito funcional;
+
 - RNF: requisito não funcional;
+
 - SGBD: Sistema Gerenciador de Banco de Dados;
+
 - SO: Sistema Operacional;
+
 - WWW: World Wide Web.
 
-1.4.	VISÃO GERAL DO DOCUMENTO
+  
+
+  1.4.	VISÃO GERAL DO DOCUMENTO
 
 Este documento apresenta uma descrição geral do sistema, seguido de uma descrição de suas funcionalidades, especificando as entradas e saída para todos os RFs. Apresenta, ainda, uma descrição superficial de RNFs contidos neste sistema, com algumas informações acerca de seu SGBD, das LPs e frameworks utilizados, de sua portabilidade etc.
 
@@ -82,7 +92,7 @@ Gerenciamento de Itens: inserir, modificar, excluir, consultar e resgatar os ite
 
   ·     Entrada obrigatória: *NOME_DE_ACESSO, EMAIL_PRINCIPAL e SENHA_USUARIO.*
 
-  ·     Entrada opcional: *AVATAR, NOME_DO_USUARIO, SOBRENOME_DO_USUARIO, DATA_DE_NASCIMENTO, CPF, CARTEIRA_DE_IDENTIDADE, END_DO_USUARIO, COMP_END_DO_USUARIO, CEP, CIDADE, ESTADO, PAIS.*
+  ·     Entrada opcional: AVATAR, NOME_DO_USUARIO, SEGUNDO_NOME_DO_USUARIO, SOBRENOME_DO_USUARIO, DATA_DE_NASCIMENTO, CPF, END_DO_USUARIO, COMP_END_DO_USUARIO, CEP, CIDADE, ESTADO, PAIS.*
 
   ·     Processo: *O cadastro será incluído no banco de dados e será gerado um valor numérico para o campo ID.*
 
@@ -94,7 +104,7 @@ Gerenciamento de Itens: inserir, modificar, excluir, consultar e resgatar os ite
 
   ·     Descrição: *O usuário entra com o campo onde ele deseja modificar e o modifica.*
 
-  ·     Entrada: *Campo desejado e o novo dado, com exceção dos campos: CPF, CARTEIRA_DE_IDENTIDADE e ID.*
+  ·     Entrada: *Campo desejado e o novo dado, com exceção dos campos: CPF e ID.*
 
   ·     Processo: *Atualização do banco de dados.*
 
@@ -154,7 +164,7 @@ Gerenciamento de Itens: inserir, modificar, excluir, consultar e resgatar os ite
 
   ·     Descrição: Os usuários cadastrados podem inserir uma nova Coleção, com suas descrições.
 
-  ·     Entrada: NOME_DO_ITEM, FABRICANTE_DO_ITEM, ESCALA_DO_ITEM, SERIE_DO_ITEM, SUBSERIE_DO_ITEM, COD_DO_MOD_DO_ITEM, TEMA_DO_ITEM, VARIACAO_DO_ITEM, PNEU_DO_ITEM, FABRICANTE_DO_MOD_DO_ITEM.
+  ·     Entrada: NOME_DO_MODELO, COD_DO_MODELO, CATEGORIA, SERIE_DO_MODELO, SUBSERIE_DO_MODELO, TEMA, FABRICANTE_DO_MODELO_ORIGINAL, ESCALA_DO_MODELO, NUMERO_DE_FABRICACAO, NUMERO_NA_SERIE, NUMERO_DE_COLECAO, ANO_DO_MODELO, EMBALAGEM, MATERIAL_DA_CARROCERIA, MATERIAL_DO_CHASSIS, COR_DA_CARROCERIA, COR_DO_CHASSIS, DECALQUES, COR_DOS_VIDROS, COR_DO_INTERIOR, RODAS, PNEU, ANO_DE_COPYRIGH, PAIS_DE_FABRICAÇÃO, ANOTECOES.
 
   ·     Processo: O sistema insere todos esses dados no banco de dados.
 
