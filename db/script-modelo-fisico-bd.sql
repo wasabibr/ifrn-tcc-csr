@@ -8,8 +8,10 @@ USE db_csr;
 // Criando a tabela tb_usuarios
 CREATE TABLE tb_usuarios
 (
+	// Escolha de um avatar entre três opções apresentadas
 	AVATAR INT(1),
 	NOME_DO_USUARIO VARCHAR(50),
+	SEGUNDO_NOME_DO_USUARIO VARCHAR(50),
 	SOBRENOME_DO_USUARIO VARCHAR(250), 
 	DATA_DE_NASCIMENTO DATE, 
 	CPF INT(11), 
@@ -40,81 +42,39 @@ CREATE TABLE tb_colecao
 // Criando a tabela tb_item
 CREATE TABLE tb_item
 (
-	
+	NOME_DO_MODELO VARCHAR(200) NOT NULL,
+	COD_DO_MODELO,
+	// Mainline ou 
+	CATEGORIA
+	SERIE_DO_MODELO VARCHAR(100),
+	SUBSERIE_DO_MODELO VARCHAR(100),
+	TEMA  VARCHAR(100),
+	FABRICANTE_DO_MODELO_ORIGINAL VARCHAR(150),
+	ESCALA_DO_MODELO VARCHAR(5),
+	NUMERO_DE_FABRICACAO INT(10),
+	NUMERO_NA_SERIE INT(10),
+	NUMERO_DE_COLECAO INT(10),
+	ANO_DO_MODELO INT(4),
+	EMBALAGEM,
+	MATERIAL_DA_CARROCERIA,
+	MATERIAL_DO_CHASSIS,
+	COR_DA_CARROCERIA,
+	COR_DO_CHASSIS,
+	DECALCOS,
+	COR_DOS_VIDROS,
+	COR_DO_INTERIOR,
+	RODAS,
+	PNEU,
+	ANO_DE_COPYRIGH,
+	PAIS_DE_FABRICAÇÃO,
+	ANOTECOES,
 	ITEM_ID INT(5) NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
 
 // Inserindo usuarios na tabela tb_usuarios
-INSERT INTO tb_usuarios ( ProductCategoryID, SupplierID, ProductName, NetRetailPrice, AvailableQuantity, WholesalePrice, UnitKGWeight, Notes )
+INSERT INTO tb_usuarios (AVATAR, NOME_DO_USUARIO, SEGUNDO_NOME_DO_USUARIO, SOBRENOME_DO_USUARIO, DATA_DE_NASCIMENTO, CPF, NOME_DE_ACESSO, EMAIL_PRINCIPAL, SENHA_USUARIO, END_DO_USUARIO, COMP_END_DO_USUARIO, CEP, CIDADE, ESTADO, PAIS, USUARIO_ID )
 VALUES
-(5, 2, 'Calculatre', 24.99, 100, 17.99, 1, 'calculation application'),
-(5, 5, 'Penwrite', 79.99, 27, 49.99, 2, 'word processing product'),
-(1, 6, 'Vortex Generator', 2499.99, 1000, 1999.99, 0.01, 'space engine component'),
-(1, 6, 'The Gourmet Crockpot', 24.99, 72, 19.99, 1.63, 'cookbook'),
-(1, 6, 'Account Books', 14.99, 26, 9.99, 1.22, 'government accounting book'),
-(3, 6, 'habanero peppers', 4.49, 189, 2.99, 0.009, 'hot peppers'),
-(2, 1, '10-mm socket wrench', 3.49, 39, 1.89, 0.018, 'important tool'),
-(3, 4, 'tomato sauce', 1.19, 1509, 0.89, 0.232, 'bottled in glass'),
-(1, 6, 'pure vanilla', 10.39, 1509, 7.89, 0.032, 'high-quality vanilla'),
-(3, 2, 'keyboard wrench', 399999.95, 6128, 149999.99, 521.38, 'handle with care'),
-=======
-// Criando a Base de Dados db_csr
-CREATE DATABASE db_csr;
-
-// Utilizando o dbcsr
-USE db_csr;
-
-// Criando a tabela tb_usuarios
-CREATE TABLE tb_usuarios
-(
-	AVATAR INT(1),
-	NOME_DO_USUARIO VARCHAR(50),
-	SOBRENOME_DO_USUARIO VARCHAR(250), 
-	DATA_DE_NASCIMENTO DATE, 
-	CPF INT(11), 
-	NOME_DE_ACESSO VARCHAR(100) NOT NULL,
-    	EMAIL_PRINCIPAL VARCHAR(220) NOT NULL,
-	SENHA_USUARIO VARCHAR(15) NOT NULL, 
-	END_DO_USUARIO VARCHAR(300), 
-	COMP_END_DO_USUARIO VARCHAR(150), 
-	CEP INT(7), 
-	CIDADE VARCHAR(100), 
-	ESTADO CHAR(2), 
-	PAIS VARCHAR(200),
-	USUARIO_ID INT(5) NOT NULL AUTO_INCREMENT PRIMARY KEY
-);
-
-// Criando a tabela tb_colecao
-CREATE TABLE tb_colecao
-(
-	NOME_DA_COLECAO VARCHAR(150) NOT NULL,
-	// Categoria privada (0) ou pública (1)
-	CATEGORIA_COL INT(1) NOT NULL,
-	DESCRICAO_COL TEXT,
-	COLECAO_ID INT(5) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	USUARIO_ID INT(5) NOT NULL
-	ITEM_ID INT(5) NOT NULL
-);
-
-// Criando a tabela tb_item
-CREATE TABLE tb_item
-(
-	
-	ITEM_ID INT(5) NOT NULL AUTO_INCREMENT PRIMARY KEY
-);
-
-// Inserindo usuarios na tabela tb_usuarios
-INSERT INTO tb_usuarios ( ProductCategoryID, SupplierID, ProductName, NetRetailPrice, AvailableQuantity, WholesalePrice, UnitKGWeight, Notes )
-VALUES
-(5, 2, 'Calculatre', 24.99, 100, 17.99, 1, 'calculation application'),
-(5, 5, 'Penwrite', 79.99, 27, 49.99, 2, 'word processing product'),
-(1, 6, 'Vortex Generator', 2499.99, 1000, 1999.99, 0.01, 'space engine component'),
-(1, 6, 'The Gourmet Crockpot', 24.99, 72, 19.99, 1.63, 'cookbook'),
-(1, 6, 'Account Books', 14.99, 26, 9.99, 1.22, 'government accounting book'),
-(3, 6, 'habanero peppers', 4.49, 189, 2.99, 0.009, 'hot peppers'),
-(2, 1, '10-mm socket wrench', 3.49, 39, 1.89, 0.018, 'important tool'),
-(3, 4, 'tomato sauce', 1.19, 1509, 0.89, 0.232, 'bottled in glass'),
-(1, 6, 'pure vanilla', 10.39, 1509, 7.89, 0.032, 'high-quality vanilla'),
-(3, 2, 'keyboard wrench', 399999.95, 6128, 149999.99, 521.38, 'handle with care'),
->>>>>>> 6bb296c998f7624d3e4c0671d2fd6a36f1f4f56e
-(2, 1, 'power cell', 47.89, 2346, 29.99, 0.298, 'ten amp-hours per cell');
+(1, 'Jefferson',, 'Leandro Ramos de Oliveira', 1978-02-10,, jefflro, jefframos-tcc@gmail.com, 123, 'rua onde moro, n100',, 59012370, 'Natal', 'RN', 'Brasil', 1),
+(1, 'Erika', 'Monik', 'A. de M. Ramos de Oliveira', 1984-05-02,, monikoliveira, monik@oliveira.com, 123, 'rua onde moro, n100',, 59012370, 'Natal', 'RN', 'Brasil', 2),
+(1, 'Alice',, 'Mendonça Ramos de Oliveira', 2017-10-24,, alicemro,alice@oliveira.com, 123, 'rua onde moro, n100',, 59012370, 'Natal', 'RN', 'Brasil', 3),
+(1, 'Edson',, 'Leandro de Oliveira', 1947-12-13,, edleandro, edson@oliveira.com, 123, 'rua diferente de onde moro, n234,, 59024510, 'Natal', 'RN', 'Brasil', 4);
