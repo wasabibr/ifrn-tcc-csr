@@ -2,11 +2,11 @@
 
 
 
-1.	INTRODUÇÃO
+1. INTRODUÇÃO
 
 A elaboração desse documento de Requistos se apoia, parcialmente, sobre um questionário do Google Drive, com total de 25 perguntas. Esse questionário, compartilhado em grupos de colecionadores no WhatsApp e em outras Redes sociais, contou com a participação de 102 entrevistados. A partir da analise desses dados colhidos, fomos capazes de compreender melhor, anseios e necessidades de nosso público-alvo, para buscarmos o desenvolvimento de um produto mais adequado.
 
-1.1.	PROPÓSITO DO DOCUMENTO
+​	1.1.  PROPÓSITO DO DOCUMENTO
 
 Esse projeto visa promover um espaço de fomento ao colecionismo de miniaturas de veículos e afins. Nesse sentido, como ponto de partida, elegemos as miniaturas da marca Hot Wheel®, pertencente à empresa Mattel®, devido a sua larga distribuição e valor de compra convidativo, tornando um objeto selecionável de mais fácil acesso.
 
@@ -17,15 +17,15 @@ O projeto está sendo idealizado de forma que possamos acrescentar novos módulo
 
 1.3.	ABREVIAÇÃO
 
-•	CGI: Common Gateway Interface;
-•	IDE: Integrated Development Environment ou Ambiente de Desenvolvimento Integrado;
-•	MVC: Model, View, Controller;
-•	MVP: Produto Viável Mínimo;
-•	RF: requisito funcional;
-•	RNF: requisito não funcional;
-•	SGBD: Sistema Gerenciador de Banco de Dados;
-•	SO: Sistema Operacional;
-•	WWW: World Wide Web;
+- CGI: Common Gateway Interface;
+- IDE: Integrated Development Environment ou Ambiente de Desenvolvimento Integrado;
+- MVC: Model, View, Controller;
+- MVP: Produto Viável Mínimo;
+- RF: requisito funcional;
+- RNF: requisito não funcional;
+- SGBD: Sistema Gerenciador de Banco de Dados;
+- SO: Sistema Operacional;
+- WWW: World Wide Web.
 
 1.4.	VISÃO GERAL DO DOCUMENTO
 
