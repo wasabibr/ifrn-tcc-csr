@@ -1,4 +1,4 @@
-# Script do modelo físico da camada de persistência
+# Camada de persistência
 
 
 

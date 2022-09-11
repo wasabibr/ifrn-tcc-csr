@@ -22,4 +22,8 @@ O projeto está sendo idealizado de forma que possamos acrescentar novos módulo
 
 ### Lista de ações para a finalização do projeto
 
-[Lista dos Requisitos Funcionais em curso de desenvolvimento](lista-de-requisitos.md)
+- [Lista dos Requisitos Funcionais em curso de desenvolvimento](lista-de-requisitos.md)
+
+- [Banco de Dados](banco-de-dados.md)
+
+- [Escrita do TCC](tcc.md)
