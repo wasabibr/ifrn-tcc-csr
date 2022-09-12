@@ -1,10 +1,14 @@
-Orientador: Everton Fagner Costa de Almeida
-Orientando: Jefferson Leandro Ramos de Oliveira
+# REQUISITOS FUNCONAIS BASEADA EM STORIES
+_Material, em construção, que fará parte da versão final de meu TCC_
 
-LISTAS DE REQUISITOS FUNCONAIS BASEADA EM STORIES
+## Fundamentação teórica
+>Em contstrução
 
-PRIMEIRO ACESSO DO USUÁRIO
-Premissa: Consideraremos que o usuário é um novo utilizador do sistema ou que está tentando acessar a partir de um novo cadastro de usuário.
+
+## LISTAS DE REQUISITOS FUNCONAIS BASEADA EM STORIES
+
+### PRIMEIRO ACESSO DO USUÁRIO
+>Premissa: Consideraremos que o usuário é um novo utilizador do sistema ou que está tentando acessar a partir de um novo cadastro de usuário.
 1)	O usuário deve conseguir criar uma conta de login para acessar ao sistema;
 2)	O sistema deve permitir que o usuário cadastre-se com um mínimo de dados obrigatórios, para um primeiro acesso ou, caso o usuário deseje, com a totalidade de seus dados;
 3)	O sistema deve notificar o usuário quais dados são obrigatórios e quais são opcionais;
