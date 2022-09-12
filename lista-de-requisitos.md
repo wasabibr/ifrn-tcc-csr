@@ -1,21 +1,29 @@
 # Lista dos Requisitos Funcionais em curso de desenvolvimento
 
+[em construção]
 
 
-1. INTRODUÇÃO
+
+## 1. INTRODUÇÃO
 
 A elaboração desse documento de Requistos se apoia, parcialmente, sobre um questionário do Google Drive, com total de 25 perguntas. Esse questionário, compartilhado em grupos de colecionadores no WhatsApp e em outras Redes sociais, contou com a participação de 102 entrevistados. A partir da analise desses dados colhidos, fomos capazes de compreender melhor, anseios e necessidades de nosso público-alvo, para buscarmos o desenvolvimento de um produto mais adequado.
 
-​	1.1.  PROPÓSITO DO DOCUMENTO
+
+
+### 1.1. PROPÓSITO DO DOCUMENTO
 
 Esse projeto visa promover um espaço de fomento ao colecionismo de miniaturas de veículos e afins. Nesse sentido, como ponto de partida, elegemos as miniaturas da marca Hot Wheel®, pertencente à empresa Mattel®, devido a sua larga distribuição e valor de compra convidativo, tornando um objeto selecionável de mais fácil acesso.
 
-​	1.2.	ESCOPO DO PRODUTO
+
+
+### 1.2. ESCOPO DO PRODUTO
 
 Para tanto buscamos elaborar uma proposta de um sistema, tal qual uma rede social, que possibilitaria a interação entre usuários que possuíssem esse mesmo interesse em comum, ou curiosos pela temática em geral. Num primeiro momento o projeto contaria com uma plataforma que permitiria ao usuário, não apenas, criar e compartilhar um perfil pessoal contendo suas informações, como também organizar, catalogar e expor a sua coleção de miniaturas.
 O projeto está sendo idealizado de forma que possamos acrescentar novos módulos, tais como um mini-blog e/ou um sistema de classificados, em resposta às necessidades do nosso público alvo.
 
-​	1.3.	ABREVIAÇÃO
+
+
+### 1.3. ABREVIAÇÃO
 
 - CGI: Common Gateway Interface;
 
@@ -37,32 +45,38 @@ O projeto está sendo idealizado de forma que possamos acrescentar novos módulo
 
   
 
-  1.4.	VISÃO GERAL DO DOCUMENTO
+### 1.4. VISÃO GERAL DO DOCUMENTO
 
 Este documento apresenta uma descrição geral do sistema, seguido de uma descrição de suas funcionalidades, especificando as entradas e saída para todos os RFs. Apresenta, ainda, uma descrição superficial de RNFs contidos neste sistema, com algumas informações acerca de seu SGBD, das LPs e frameworks utilizados, de sua portabilidade etc.
 
 
-2.	DESCRIÇÃO GERAL
 
-2.1.	PERSPECTIVA DO PRODUTO
+## 2. DESCRIÇÃO GERAL
 
 [em construção]
 
-2.2.	FUNÇÕES
+### 2.1. PERSPECTIVA DO PRODUTO
+
+[em construção]
+
+### 2.2. FUNÇÕES
 
 Gerenciamento de Conta de Usuário: cadastrar, modificar e excluir usuário do sistema.
 Gerenciamento de Coleções: [em construção].
 Gerenciamento de Itens: inserir, modificar, excluir, consultar e resgatar os itens colecionáveis, do banco de dados.
 [em construção]
 
-2.3.	RESTRIÇÕES GERAIS
+### 2.3. RESTRIÇÕES GERAIS
 
 [em construção]
 
 
-3.	REQUISITOS
 
-3.1.	REQUISITOS FUNCIONAIS
+## 3. REQUISITOS
+
+[em construção]
+
+### 3.1. REQUISITOS FUNCIONAIS
 
 
 
