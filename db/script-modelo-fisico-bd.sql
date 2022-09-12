@@ -1,13 +1,13 @@
 <<<<<<< HEAD
 /* Criando a Base de Dados db_csr */;
-CREATE DATABASE db_csr;
+CREATE DATABASE 'db_csr';
 
 /* Utilizando o dbcsr */;
 USE db_csr;
 
 /* Criando a tabela tb_usuarios */;
 /* Escolha de um avatar entre três opções apresentadas (1, 2 ou 3) */;
-CREATE TABLE tb_usuarios
+CREATE TABLE 'tb_usuarios'
 (
 	'USUARIO_ID' INT NOT NULL AUTO_INCREMENT,
 	'AVATAR' INT NOT NULL DEFAULT '1',
@@ -29,7 +29,7 @@ CREATE TABLE tb_usuarios
 );
 
 /* Inserindo usuarios na tabela tb_usuarios */;
-INSERT INTO tb_usuarios (AVATAR, NOME_DO_USUARIO, SEGUNDO_NOME_DO_USUARIO, SOBRENOME_DO_USUARIO, DATA_DE_NASCIMENTO, CPF, NOME_DE_ACESSO, EMAIL_PRINCIPAL, SENHA_USUARIO, END_DO_USUARIO, COMP_END_DO_USUARIO, CEP, CIDADE, ESTADO, PAIS, USUARIO_ID )
+INSERT INTO 'tb_usuarios' (AVATAR, NOME_DO_USUARIO, SEGUNDO_NOME_DO_USUARIO, SOBRENOME_DO_USUARIO, DATA_DE_NASCIMENTO, CPF, NOME_DE_ACESSO, EMAIL_PRINCIPAL, SENHA_USUARIO, END_DO_USUARIO, COMP_END_DO_USUARIO, CEP, CIDADE, ESTADO, PAIS, USUARIO_ID )
 VALUES
 (1, 'Jefferson',, 'Leandro Ramos de Oliveira', 1978-02-10,, 'jefflro', 'jefframos-tcc@gmail.com', 123, 'rua onde moro, n100',, '59012370', 'Natal', 'RN', 'Brasil', 1),
 (1, 'Erika', 'Monik', 'A. de M. R. de Oliveira', 1984-05-02,, 'monikoliveira', 'monik@oliveira.com', 123, 'rua onde moro, n100',, '59012370', 'Natal', 'RN', 'Brasil', 2),
@@ -38,7 +38,7 @@ VALUES
 
 /* Criando a tabela tb_colecao */;
 /* Categoria privada (0) ou pública (1) */;
-CREATE TABLE tb_colecao
+CREATE TABLE 'tb_colecao'
 (
 	'COLECAO_ID' INT NOT NULL AUTO_INCREMENT;
 	'NOME_DA_COLECAO' VARCHAR(150) NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE tb_colecao
 
 /* Criando a tabela tb_item */;
 /* Categoria: MAINLINE, TH, STH ou PREMIUM */
-CREATE TABLE tb_item
+CREATE TABLE 'tb_item'
 (
 	'ITEM_ID INT' NOT NULL AUTO_INCREMENT,
 	'NOME_DO_MODELO' VARCHAR(200) NOT NULL,
