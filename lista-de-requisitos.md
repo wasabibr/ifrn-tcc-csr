@@ -176,13 +176,13 @@ Gerenciamento de Itens: inserir, modificar, excluir, consultar e resgatar os ite
 
 - [ ] **RF009: Inserção de um Item na Coleção**
 
-  ·     Descrição: Os usuários cadastrados podem inserir uma nova Coleção, com suas descrições.
+  ·     Descrição: *Os usuários cadastrados podem inserir uma nova Coleção, com suas descrições.*
 
-  ·     Entrada: NOME_DO_MODELO, COD_DO_MODELO, CATEGORIA, SERIE_DO_MODELO, SUBSERIE_DO_MODELO, TEMA, FABRICANTE_DO_MODELO_ORIGINAL, ESCALA_DO_MODELO, NUMERO_DE_FABRICACAO, NUMERO_NA_SERIE, NUMERO_DE_COLECAO, ANO_DO_MODELO, EMBALAGEM, MATERIAL_DA_CARROCERIA, MATERIAL_DO_CHASSIS, COR_DA_CARROCERIA, COR_DO_CHASSIS, DECALQUES, COR_DOS_VIDROS, COR_DO_INTERIOR, RODAS, PNEU, ANO_DE_COPYRIGH, PAIS_DE_FABRICAÇÃO, ANOTECOES.
+  ·     Entrada: *NOME_DO_MODELO, COD_DO_MODELO, CATEGORIA, SERIE_DO_MODELO, SUBSERIE_DO_MODELO, TEMA, FABRICANTE_DO_MODELO_ORIGINAL, ESCALA_DO_MODELO, NUMERO_DE_FABRICACAO, NUMERO_NA_SERIE, NUMERO_DE_COLECAO, ANO_DO_MODELO, EMBALAGEM, MATERIAL_DA_CARROCERIA, MATERIAL_DO_CHASSIS, COR_DA_CARROCERIA, COR_DO_CHASSIS, DECALQUES, COR_DOS_VIDROS, COR_DO_INTERIOR, RODAS, PNEU, ANO_DE_COPYRIGH, PAIS_DE_FABRICAÇÃO, ANOTECOES.*
 
-  ·     Processo: O sistema insere todos esses dados no banco de dados.
+  ·     Processo: *O sistema insere todos esses dados no banco de dados.*
 
-  ·     Saída: Mensagem de confirmação de bem sucedido no caso da inserção ter sido efetuada com sucesso, senão, mensagem de erro.
+  ·     Saída: *Mensagem de confirmação de bem sucedido no caso da inserção ter sido efetuada com sucesso, senão, mensagem de erro.*
 
  
 
