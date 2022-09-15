@@ -23,7 +23,7 @@ O projeto está sendo idealizado de forma que possamos acrescentar novos módulo
 
 
 
-### 1.3. ABREVIAÇÃO
+### 1.3. ABREVIAÇÕES
 
 - CGI: Common Gateway Interface;
 
