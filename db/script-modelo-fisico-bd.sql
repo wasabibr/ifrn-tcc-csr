@@ -88,6 +88,7 @@ CREATE TABLE 'tb_item'
 	PRIMARY KEY ('ITEM_ID')
 );
 
+/*
 CREATE TABLE 'tb_colecao_item'
 (
 	COLECAO_ITEM_ID	NOT NULL AUTO_INCREMENT,
@@ -96,4 +97,18 @@ CREATE TABLE 'tb_colecao_item'
 	PRIMARY KEY (COLECAO_ITEM_ID),
 	FOREIGN KEY ('COLECAO_ID') REFERENCES tb_colecao('COLECAO_ID'),
 	FOREIGN KEY ('ITEM_ID') REFERENCES tb_item('ITEM_ID')
+);
+*/;
+
+CREATE TABLE 'tb_colecao_item'
+(
+	COLECAO_ID INT,
+	ITEM_ID INT,
+	
+	QUANTIDADE INT,
+	
+	FOREIGN KEY ('COLECAO_ID') REFERENCES tb_colecao('COLECAO_ID'),
+	FOREIGN KEY ('ITEM_ID') REFERENCES tb_item('ITEM_ID'), 
+	
+	PRIMARY KEY (COLECAO_ITEM_ID, ITEM_ID) -- chave primária composta 
 );
