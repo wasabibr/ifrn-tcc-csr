@@ -18,7 +18,7 @@ if(isset($_POST['email_principal']) || isset($_POST['senha_usuario'])) {
         $email = $mysqli->real_escape_string($_POST['email_principal']);
         $senha = $mysqli->real_escape_string($_POST['senha_usuario']);
 
-        $sql_code = "SELECT * FROM tb_usuarios WHERE email_principal = '$email' AND senha_usuario = '$senha'";
+        $sql_code = "SELECT * FROM usuarios WHERE email_principal = '$email' AND senha_usuario = '$senha'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;

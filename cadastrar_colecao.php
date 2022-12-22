@@ -1,9 +1,13 @@
 <?php
 
-    if(count($_POST) > 0) {
+    include('./includes/protect.php');
 
-        //conexao com o banco de dados db_csr
-        include('./includes/conexao.php');
+    //conexao com o banco de dados db_csr
+    include('./includes/conexao.php');
+
+    $nome = $_SESSION['NOME_DO_USUARIO'];
+
+    if(count($_POST) > 0) {
 
         $erro = false;
 
@@ -66,6 +70,52 @@
 </head>
 <body>
 
+<header>
+
+<nav class="navbar navbar-expand-xl fixed-top navbar-dark navbar-light" style="background-color: grey;" aria-label="Sixth navbar example">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarsExample06">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+
+                <li class="nav-item">
+                    <img src="./img/csr-logo.png" class="rounded float-start" alt="..." height="40"> 
+                </li>
+
+                <li class="nav-item">
+                </li>
+
+                <li class="nav-item">
+                    <a href="editar_usuario.php?id=<?php echo $id; ?>" class="nav-link" tabindex="-1" aria-disabled="true"><b>Editar dados do usuário</b></a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="cadastrar_colecao.php?id=<?php echo $id; ?>" class="nav-link" tabindex="-1" aria-disabled="true"><b>Cadastrar coleção</b></a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="cadastrar_item.php?id=<?php echo $id; ?>" class="nav-link" tabindex="-1" aria-disabled="true"><b>Cadastrar Item</b></a>
+                </li>
+
+            </ul>
+        </div> 
+
+        <div>        
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+
+                <li class="navbar-text">
+                    <b><?php echo $nome?></b>, você está logad@
+                </li>
+
+                <li class="nav-item">
+                    <a href="logout.php" class="nav-link" tabindex="-1" aria-disabled="true"><b>Sair</b></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+</header>
 
 <div class="container">
     <div class="row align-items-center">
@@ -83,12 +133,18 @@
                             <div>                            
                                 <div class="input-group mb-6">
                                     <span class="input-group-text"><b>Nome da coleção</b></span>
-                                    <input value="<?php if(isset($_POST['avatar'])) echo $_POST['avatar']; ?>" name="avatar" type="text" placeholder="Coleção de carrinhos de ferro" class="form-control" aria-describedby="basic-addon1">
+                                    <input value="<?php if(isset($_POST['avatar'])) echo $_POST['avatar']; ?>" name="avatar" type="text" placeholder="Coleção de carrinhos de ferro" class="form-control is-invalid" aria-describedby="basic-addon1" required>
                                 </div>  
 
                                 <div class="input-group mb-6">
-                                    <span class="input-group-text"><i>Categoria da coleção</i></span>
+                                    <span class="input-group-text" for="inputGroupSelect01"><i>Categoria da coleção</i></span>
                                     <input value="<?php if(isset($_POST['nome_de_acesso'])) echo $_POST['nome_de_acesso']; ?>" name="nome_de_acesso" type="text" placeholder="Categoria privada (0) ou pública (1)" class="form-control" aria-describedby="basic-addon1">
+
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>Choose...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                    </select>
                                 </div>                               
 
                                 <div class="input-group mb-6">

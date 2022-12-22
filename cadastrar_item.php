@@ -119,12 +119,12 @@
                             <div>                            
                                 <div class="input-group mb-6">
                                     <span class="input-group-text"><b>Nome do modelo</b></span>
-                                    <input value="<?php if(isset($_POST['nome_do_modelo'])) echo $_POST['nome_do_modelo']; ?>" name="nome_do_modelo" type="text" placeholder="verifique na cartela" class="form-control" aria-describedby="basic-addon1">
+                                    <input value="<?php if(isset($_POST['nome_do_modelo'])) echo $_POST['nome_do_modelo']; ?>" name="nome_do_modelo" type="text" placeholder="verifique na cartela" class="form-control is-invalid" aria-describedby="basic-addon1" required>
                                 </div>                               
                           
                                 <div class="input-group mb-6">
                                     <span class="input-group-text"><b>Código do modelo</b></span>
-                                    <input value="<?php if(isset($_POST['cod_do_modelo'])) echo $_POST['cod_do_modelo']; ?>" name="cod_do_modelo" type="text" placeholder="verifique no chassi ou na cartela" class="form-control" aria-describedby="basic-addon1">
+                                    <input value="<?php if(isset($_POST['cod_do_modelo'])) echo $_POST['cod_do_modelo']; ?>" name="cod_do_modelo" type="text" placeholder="verifique no chassi ou na cartela" class="form-control is-invalid" aria-describedby="basic-addon1" required>
                                 </div>  
                                 
                                 <div class="input-group mb-6">
